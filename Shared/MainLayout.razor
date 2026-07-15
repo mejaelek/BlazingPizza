@@ -1,6 +1,21 @@
 @inherits LayoutComponentBase
 
-<div class="content">
-    @Body
-</div>
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
 
+    <main>
+        <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+
+        <footer class="app-footer">
+            <p>&copy; @DateTime.Now.Year Kamohelo Godfrey Mejaele — South Africa</p>
+        </footer>
+    </main>
+</div>
