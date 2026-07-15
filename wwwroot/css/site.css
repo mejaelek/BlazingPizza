@@ -201,6 +201,7 @@ form {
 
 .price::before {
     content: 'R';
+    content: 'R';
     font-weight: 300;
     font-size: 1.2rem;
     margin-right: 0.2rem;
@@ -252,7 +253,7 @@ form {
 }
 
 .order-total .total-price::before {
-    content: 'R';
+    content: '£';
     font-weight: 300;
     margin: 0 0.1rem 0 0.4rem;
 }
@@ -309,7 +310,7 @@ form {
 }
 
 .item-price::before {
-    content: 'R';
+    content: '£';
     font-weight: 100;
     margin-right: 0.3rem;
 }
@@ -745,6 +746,15 @@ input[type=range]::-ms-thumb {
     right: 0.75rem;
     top: 0.5rem;
 }
+
+.app-footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+}
+
 
 @keyframes progressbar-slide {
     0% {
